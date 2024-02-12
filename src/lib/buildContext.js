@@ -83,7 +83,7 @@ const buildContext = ({
             regime: 'REGIME_GLOBAL',
             twinsRank: '1',
             isCSS: isCss,
-            dateCSS: '20220101',
+            dateCSS: "1970-01-01T05:37:00.101Z",
             isAlsaceMoselle: false
         }
     },
@@ -249,56 +249,56 @@ const buildContext = ({
     customer: {
         activePolicies: [
             {
-                cancellationApplicant: "CLIENT",
-                name: "CONCURRENCE_SANTE_ASSUREUR_AYANT_DROIT"
+                cancellationApplicant: 'CLIENT',
+                name: 'CONCURRENCE_SANTE_ASSUREUR_AYANT_DROIT'
             }
         ],
         addresses: [
             {
-                city: "Angoulême",
-                country: "France",
+                city: 'Angoulême',
+                country: 'France',
                 fields: [
-                    "5 rue des lilas"
+                    '5 rue des lilas'
                 ],
-                zipCode: "31000"
+                zipCode: '31000'
             }
         ],
         bankAccounts: [
             {
-                bankName: "ALLIANZ BANQUE",
-                bic: "AGFBFRCC",
-                iban: "FR1817569000408261216145U10",
-                ownerName: "Test",
-                type: "PRELEVEMENT"
+                bankName: 'ALLIANZ BANQUE',
+                bic: 'AGFBFRCC',
+                iban: 'FR1817569000408261216145U10',
+                ownerName: 'Test',
+                type: 'PRELEVEMENT'
             }
         ],
         subscriptionStatus,
-        birthCity: "Lieoux",
-        birthCountry: "France",
+        birthCity: 'Lieoux',
+        birthCountry: 'France',
         birthDate,
-        birthName: "Dupont",
-        birthZipCode: "31800",
-        civility: "MISTER",
-        csp: {
-            externalId: "20",
-            label: "string"
+        birthName: 'Dupont',
+        birthZipCode: '31800',
+        civility: 'MISTER',
+        customCsp: {
+            externalId: '20',
+            label: cspLabel
         },
         emails: [
             {
-                value: "marianne.stalter@fasst.io"
+                value: 'marianne.stalter@fasst.io'
             }
         ],
-        externalId: "AAAA01",
-        firstName: "Jean",
+        externalId: 'AAAA01',
+        firstName: 'Jean',
         isMadelin: true,
-        madelinMonth: "JUNE",
+        madelinMonth: 'JUNE',
         isTns: true,
-        lastName: "Dupont",
-        maritalStatus: "COUPLE",
+        lastName: 'Dupont',
+        maritalStatus: 'COUPLE',
         phones: [
             {
-                internationalCode: "string",
-                number: 0
+                internationalCode: 'string',
+                number: '0'
             }
         ],
         GDPRs: [
@@ -308,127 +308,125 @@ const buildContext = ({
         ],
         socialSecurity: {
             isTeletransmission: true,
-            key: 37,
-            number: 1870831300200,
-            organismCode: "",
-            regime: "REGIME_GLOBAL",
-            twinsRank: 0,
+            key: '37',
+            number: '1870831300200',
+            organismCode: '',
+            regime: 'REGIME_GLOBAL',
+            twinsRank: '1',
             isCSS: isCss,
-            dateCSS: "20220101",
+            dateCSS: "1970-01-01T05:37:00.101Z",
             isAlsaceMoselle: false
         }
     },
-    grantees: [
-        {
-            externalId: "B_01",
-            firstName: "Josianne",
-            lastName: "Dupont",
-            CSP: {
-                externalId: "1",
-                label: "Agent territorial"
-            },
-            attachedSocialSecurities: [
-                {
-                    entityId: "B_01",
-                    type: "grantee"
-                }
-            ],
-            birthDate: "19850219",
-            civility: "MISS",
-            isTNS: true,
-            type: "SPOUSE",
-            socialSecurity: {
-                isTeletransmission: true,
-                key: 81,
-                number: 2850250005200,
-                organismCode: "",
-                regime: "REGIME_GLOBAL",
-                twinsRank: 0,
-                isAlsaceMoselle: false
+    grantees: [{
+        externalId: 'B_01',
+        firstName: 'Josianne',
+        lastName: 'Dupont',
+        CSP: {
+            externalId: '1',
+            label: 'label'
+        },
+        attachedSocialSecurities: [
+            {
+                entityId: 'B_01',
+                type: 'grantee'
             }
+        ],
+        birthDate: '19850219',
+        civility: 'MISS',
+        isTNS: true,
+        type: 'SPOUSE',
+        socialSecurity: {
+            isTeletransmission: true,
+            key: '81',
+            number: '2850250005200',
+            organismCode: '',
+            regime: 'REGIME_GLOBAL',
+            twinsRank: '1',
+            isAlsaceMoselle: false
         }
-    ],
+    }],
     collectionNeeds: [
         {
-            budget: "Moins de 50 euros",
+            budget: 'Moins de 50 euros',
             relations: [
                 {
-                    entityId: "AAAA01",
-                    type: "customer"
+                    entityId: 'AAAA01',
+                    type: 'customer'
                 }
             ],
             healthNeeds: [
                 {
-                    level: "1",
-                    module: "HOSPITALISATION"
+                    level: '1',
+                    module: 'HOSPITALISATION'
                 },
                 {
-                    level: "2",
-                    module: "SOINS_COURANTS"
+                    level: '2',
+                    module: 'SOINS_COURANTS'
                 },
                 {
-                    level: "3",
-                    module: "OPTIQUE"
+                    level: '3',
+                    module: 'OPTIQUE'
                 },
                 {
-                    level: "2",
-                    module: "DENTAIRE"
+                    level: '2',
+                    module: 'DENTAIRE'
                 },
                 {
-                    level: "2",
-                    module: "AIDE_AUDITIVE"
+                    level: '2',
+                    module: 'AIDE_AUDITIVE'
                 }
             ]
         },
         {
-            budget: "Moins de 50 euros",
+            budget: 'Moins de 50 euros',
             relations: [
                 {
-                    entityId: "B_01",
-                    type: "grantee"
+                    entityId: 'B_01',
+                    type: 'grantee'
                 }
             ],
             healthNeeds: [
                 {
-                    level: "3",
-                    module: "HOSPITALISATION"
+                    level: '3',
+                    module: 'HOSPITALISATION'
                 },
                 {
-                    level: "1",
-                    module: "SOINS_COURANTS"
+                    level: '1',
+                    module: 'SOINS_COURANTS'
                 },
                 {
-                    level: "1",
-                    module: "OPTIQUE"
+                    level: '1',
+                    module: 'OPTIQUE'
                 },
                 {
-                    level: "2",
-                    module: "DENTAIRE"
+                    level: '2',
+                    module: 'DENTAIRE'
                 },
                 {
-                    level: "3",
-                    module: "AIDE_AUDITIVE"
+                    level: '3',
+                    module: 'AIDE_AUDITIVE'
                 }
             ]
         }
     ],
     offers: [
         {
-            effectDate: "2024-02-06 11:00:00.000Z",
+            effectDate: moment().add(1, 'day').format("YYYY-MM-DD"),
             packs: [
                 {
-                    customerId: "AAAA01",
+                    customerId: 'AAAA01',
                     pricings: [
                         {
-                            moduleId: "PAVMOINS80"
+                            moduleId: 'PAVMOINS80'
                         }
                     ]
                 },
                 {
-                    granteeId: "B_01",
+                    granteeId: 'B_01',
                     pricings: [
                         {
-                            moduleId: "PAVMOINS80"
+                            moduleId: 'PAVMOINS80'
                         }
                     ]
                 }
@@ -439,42 +437,42 @@ const buildContext = ({
         {
             isExternal: true,
             label: equals(decrochage, 'aucun') ? null : decrochage,
-            metadata: `{"quoteInsuranceName":"NOM_ASSUREUR_DEVIS","quoteInsuranceId":"CODE_ASSUREUR_DEVIS","opportunityType":"OPP_TYPE","opportunityId":"NUM_OPPORTUNITE","originCode":"OPP_CODE_ORIGINE","originLabel":${JSON.stringify(originLabel)},"ownershipId":"CODE_ACTEUR","agencyId":"CODE_SITE" ${!isEmpty(brokerId) ? `,${JSON.stringify("brokerId")}:${JSON.stringify(brokerId)}` : ""}}`
+            metadata: `{"quoteInsuranceName":"NOM_ASSUREUR_DEVIS","quoteInsuranceId":"CODE_ASSUREUR_DEVIS","opportunityType":"OPP_TYPE","opportunityId":"NUM_OPPORTUNITE","originCode":"OPP_CODE_ORIGINE","canal":${JSON.stringify(originLabel)},"ownershipId":"CODE_ACTEUR","agencyId":"CODE_SITE" ${!isEmpty(brokerId) ? `,${JSON.stringify("brokerId")}:${JSON.stringify(brokerId)}` : ""}}`
         }
     ],
     users: [
         {
             addresses: [
                 {
-                    city: "Angoulême",
-                    country: "France",
-                    department: "31",
+                    city: 'Angoulême',
+                    country: 'France',
+                    department: '31',
                     fields: [
-                        "10 rue de la gare"
+                        '10 rue de la gare'
                     ],
-                    zipCode: "31000"
+                    zipCode: '31000'
                 }
             ],
             emails: [
                 {
-                    value: "marianne.stalter@fasst.io"
+                    value: 'marianne.stalter@fasst.io'
                 }
             ],
-            externalId: "USER01",
-            firstName: "Test",
-            lastName: "Test",
+            externalId: 'USER01',
+            firstName: 'Test',
+            lastName: 'Test',
             network: equals(network, "aucun") ? null : network,
             phones: [
                 {
-                    internationalCode: "+33",
-                    number: 102020305
+                    internationalCode: '+33',
+                    number: '102020305'
                 }
             ],
             roles: [
                 role
             ],
-            companyName: "test",
-            ORIAS: 0
+            companyName: 'test',
+            ORIAS: '0'
         }
     ]
 })
