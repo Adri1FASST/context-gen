@@ -1,5 +1,5 @@
 import {v4 as uuidv4} from 'uuid';
-import {isEmpty} from "ramda";
+import {equals, isEmpty} from "ramda";
 import moment from 'moment';
 
 const buildContext = ({
@@ -205,7 +205,7 @@ const buildContext = ({
     svcs: [
         {
             isExternal: true,
-            label: decrochage,
+            label: equals(decrochage, 'aucun') ? null : decrochage,
             metadata: `{"quoteInsuranceName":"NOM_ASSUREUR_DEVIS","quoteInsuranceId":"CODE_ASSUREUR_DEVIS","opportunityType":"OPP_TYPE","opportunityId":"NUM_OPPORTUNITE","originCode":"OPP_CODE_ORIGINE","canal":${JSON.stringify(originLabel)},"ownershipId":"CODE_ACTEUR","agencyId":"CODE_SITE" ${!isEmpty(brokerId) ? `,${JSON.stringify("brokerId")}:${JSON.stringify(brokerId)}` : ""}}`
         }
     ],
@@ -230,7 +230,7 @@ const buildContext = ({
             externalId: 'USER01',
             firstName: 'Test',
             lastName: 'Test',
-            network,
+            network: equals(network, "aucun") ? null : network,
             phones: [
                 {
                     internationalCode: '+33',
@@ -438,7 +438,7 @@ const buildContext = ({
     svcs: [
         {
             isExternal: true,
-            label: decrochage,
+            label: equals(decrochage, 'aucun') ? null : decrochage,
             metadata: `{"quoteInsuranceName":"NOM_ASSUREUR_DEVIS","quoteInsuranceId":"CODE_ASSUREUR_DEVIS","opportunityType":"OPP_TYPE","opportunityId":"NUM_OPPORTUNITE","originCode":"OPP_CODE_ORIGINE","originLabel":${JSON.stringify(originLabel)},"ownershipId":"CODE_ACTEUR","agencyId":"CODE_SITE" ${!isEmpty(brokerId) ? `,${JSON.stringify("brokerId")}:${JSON.stringify(brokerId)}` : ""}}`
         }
     ],
@@ -463,7 +463,7 @@ const buildContext = ({
             externalId: "USER01",
             firstName: "Test",
             lastName: "Test",
-            network,
+            network: equals(network, "aucun") ? null : network,
             phones: [
                 {
                     internationalCode: "+33",

@@ -9,9 +9,9 @@ export const networkOptions = [
     {label: "Sosoft", value: "Sosoft"},
     {label: "Lourmel", value: "Lourmel"},
     {label: "Indépendant", value: "Indépendant"},
-    {label: "aucun", value: null}]
+    {label: "aucun", value: "aucun"}]
 
 export const decrochageOptions = [
     {label: "Salesforce", value: "salesforce"},
     {label: "Tessi", value: "tessi"},
-    {label: "aucun", value: null}]
+    {label: "aucun", value: "aucun"}]
