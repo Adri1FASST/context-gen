@@ -91,7 +91,7 @@ const buildContext = ({
         externalId: 'B_01',
         firstName: 'Josianne',
         lastName: 'Dupont',
-        CSP: {
+        customCsp: {
             externalId: '1',
             label: 'label'
         },
@@ -322,7 +322,7 @@ const buildContext = ({
         externalId: 'B_01',
         firstName: 'Josianne',
         lastName: 'Dupont',
-        CSP: {
+        customCsp: {
             externalId: '1',
             label: 'label'
         },
