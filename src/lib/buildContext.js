@@ -101,7 +101,7 @@ const buildContext = ({
                 type: 'grantee'
             }
         ],
-        birthDate: '19850219',
+        birthDate: '1985-02-19',
         civility: 'MISS',
         isTNS: true,
         type: 'SPOUSE',
@@ -332,7 +332,7 @@ const buildContext = ({
                 type: 'grantee'
             }
         ],
-        birthDate: '19850219',
+        birthDate: '1985-02-19',
         civility: 'MISS',
         isTNS: true,
         type: 'SPOUSE',
