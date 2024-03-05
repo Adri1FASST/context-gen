@@ -206,7 +206,7 @@ const buildContext = ({
         {
             isExternal: true,
             label: equals(decrochage, 'aucun') ? null : decrochage,
-            metadata: `{"quoteInsuranceName":"NOM_ASSUREUR_DEVIS","quoteInsuranceId":"CODE_ASSUREUR_DEVIS","opportunityType":"OPP_TYPE","opportunityId":"NUM_OPPORTUNITE","originCode":"OPP_CODE_ORIGINE","canal":${JSON.stringify(originLabel)},"ownershipId":"CODE_ACTEUR","agencyId":"CODE_SITE" ${!isEmpty(brokerId) ? `,${JSON.stringify("brokerId")}:${JSON.stringify(brokerId)}` : ""}}`
+            metadata: `{"quoteInsuranceName":"NOM_ASSUREUR_DEVIS","quoteInsuranceId":"CODE_ASSUREUR_DEVIS","opportunityType":"OPP_TYPE","opportunityId":"NUM_OPPORTUNITE","originCode":"OPP_CODE_ORIGINE","canal":${JSON.stringify(originLabel)},"ownershipId":"CODE_ACTEUR","agencyId":"CODE_SITE" ${!isEmpty(brokerId) ? `,${JSON.stringify("brokerId")}:${brokerId}` : ""}}`
         }
     ],
     users: [
@@ -437,7 +437,7 @@ const buildContext = ({
         {
             isExternal: true,
             label: equals(decrochage, 'aucun') ? null : decrochage,
-            metadata: `{"quoteInsuranceName":"NOM_ASSUREUR_DEVIS","quoteInsuranceId":"CODE_ASSUREUR_DEVIS","opportunityType":"OPP_TYPE","opportunityId":"NUM_OPPORTUNITE","originCode":"OPP_CODE_ORIGINE","canal":${JSON.stringify(originLabel)},"ownershipId":"CODE_ACTEUR","agencyId":"CODE_SITE" ${!isEmpty(brokerId) ? `,${JSON.stringify("brokerId")}:${JSON.stringify(brokerId)}` : ""}}`
+            metadata: `{"quoteInsuranceName":"NOM_ASSUREUR_DEVIS","quoteInsuranceId":"CODE_ASSUREUR_DEVIS","opportunityType":"OPP_TYPE","opportunityId":"NUM_OPPORTUNITE","originCode":"OPP_CODE_ORIGINE","canal":${JSON.stringify(originLabel)},"ownershipId":"CODE_ACTEUR","agencyId":"CODE_SITE" ${!isEmpty(brokerId) ? `,${JSON.stringify("brokerId")}:${brokerId}` : ""}}`
         }
     ],
     users: [

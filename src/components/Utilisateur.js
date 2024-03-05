@@ -14,7 +14,7 @@ import {head, isNil} from "ramda";
 import {decrochageOptions, networkOptions, roleOptions} from "../lib/options";
 import DatePicker from "react-datepicker";
 import React from "react";
-import {validateBrokerId, validateName} from "../validations/validations";
+import {validateName} from "../validations/validations";
 import {map} from 'ramda'
 import '../app/date-picker.css'
 import moment from 'moment'
@@ -36,7 +36,7 @@ const Utilisateur = ({props}) => {
                 </FormControl>
             )}
         </Field>
-        <Field name='brokerId' validate={validateBrokerId}>
+        <Field name='brokerId'>
             {({field, form}) => (
                 <FormControl isInvalid={form.errors.brokerId && form.touched.brokerId}>
                     <FormLabel>BrokerId</FormLabel>

@@ -45,7 +45,7 @@ const ContextForm = ({value, setValue, onCopy, environment}) => {
                                 "network": "Sofraco",
                                 "from": "salesForce",
                                 "role": "BROKER",
-                                "brokerId": "0123",
+                                "brokerId": 123,
                                 "originLabel": "Site internet MI",
                                 "subscriptionStatus": "MEMBER",
                                 "cspLabel": "Agent territorial",

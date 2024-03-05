@@ -7,12 +7,3 @@ export const validateName = (value) => {
     }
     return error
 }
-
-export const validateBrokerId = (value) => {
-    let error
-    if (!test(/^\d{4}$/, value)) {
-        error = 'Ce champ doit contenir 4 chiffres'
-    }
-    return error
-
-}
